@@ -14,7 +14,7 @@
 	<!-- header section -->
 	<header class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			<div class="row">
+			<div>
 				<div class="logo navbar-header">
 					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon icon-bar"></span>
@@ -270,33 +270,34 @@
 					<h1 class="heading">Galeria</h1>
 					<hr>
 				</div>
+				<div class="clearfix"></div>
 				<div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
 							<img class="d-block w-100" src="images/galeria-danie1.jpg" alt="">
 						</div>
-						<div class="carousel-item">
+						<div class="item">
 							<img class="d-block w-100" src="images/galeria-danie2.jpg" alt="">
 						</div>
-						<div class="carousel-item">
+						<div class="item">
 							<img class="d-block w-100" src="images/galeria-danie3.jpg" alt="">
 						</div>
-						<div class="carousel-item">
+						<div class="item">
 							<img class="d-block w-100" src="images/galeria-danie4.jpg" alt="">
 						</div>
-						<div class="carousel-item">
+						<div class="item">
 							<img class="d-block w-100" src="images/galeria-danie5.jpg" alt="">
 						</div>
-						<div class="carousel-item">
+						<div class="item">
 							<img class="d-block w-100" src="images/galeria-danie6.jpg" alt="">
 						</div>
 					</div>
-					<a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<a class="left carousel-control" href="#galleryCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<a class="right carousel-control" href="#galleryCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
@@ -380,6 +381,7 @@
 	<!-- JAVASCRIPT JS FILES -->	
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
 
 </body>
 </html>

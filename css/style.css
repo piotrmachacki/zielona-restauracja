@@ -38,6 +38,10 @@ ul {
 	padding: 0;
 }
 
+header.navbar {
+	border-color: #cccccc;
+}
+
 
 /* home section */
 
