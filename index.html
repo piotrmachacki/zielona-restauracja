@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/featherlight.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
 </head>
@@ -21,17 +23,17 @@
 						<span class="icon icon-bar"></span>
 						<span class="icon icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/">Zielona Restauracja</a>
+					<a class="navbar-brand smoothScroll" href="#home">Zielona Restauracja</a>
 				</div>
 				<nav>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="">Home</a></li>
-							<li><a href="">Dania główne</a></li>
-							<li><a href="">Menu</a></li>
-							<li><a href="">Zespół</a></li>
-							<li><a href="">Galeria</a></li>
-							<li><a href="">Kontakt</a></li>
+							<li><a href="#home" class="smoothScroll">Home</a></li>
+							<li><a href="#food" class="smoothScroll">Dania główne</a></li>
+							<li><a href="#menu" class="smoothScroll">Menu</a></li>
+							<li><a href="#team" class="smoothScroll">Zespół</a></li>
+							<li><a href="#gallery" class="smoothScroll">Galeria</a></li>
+							<li><a href="#contact" class="smoothScroll">Kontakt</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -46,7 +48,7 @@
 				<div class="col-md-12 col-sm-12">
 					<h1>Zielona Restauracja</h1>
 					<h2>Najepsze dania w mieście</h2>
-					<a href="#food" class="btn">Nasze dania</a>
+					<a href="#menu" class="btn smoothScroll">Sprawdź nasze menu</a>
 				</div>
 			</div>
 		</div>
@@ -56,36 +58,36 @@
 	<section id="food">
 		<div class="container">
 			<div class="row">
-				<div class="heading-box col-md-12 col-sm-12 text-center">
+				<div class="heading-box col-md-12 col-sm-12 text-center wow flipInY" data-wow-delay="0.3s">
 					<h1 class="heading">Dania główne</h1>
 					<hr>
 				</div>
 				<div class="col-md-4 col-sm-4">
-					<div class="food-item">
+					<div class="food-item wow fadeInUp" data-wow-delay="0.3s">
 						<img src="images/grillowany-stek-z-poledwicy-wolowej.jpg" alt="">
 						<h4>Grillowany stek z polędwicy wołowej</h4>
 					</div>
-					<div class="food-item">
+					<div class="food-item wow fadeInUp" data-wow-delay="0.6s">
 						<img src="images/grilowany-losos-z-fasolka-i-papryka.jpg" alt="">
 						<h4>Grilowany łosoś z fasolką i papryką</h4>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
-					<div class="food-item">
+					<div class="food-item wow fadeInUp" data-wow-delay="0.3s">
 						<img src="images/salatka-z-kurczaka-z-jablkiem.jpg" alt="">
 						<h4>Sałatka z kurczaka z jabłkiem</h4>
 					</div>
-					<div class="food-item">
+					<div class="food-item wow fadeInUp" data-wow-delay="0.6s">
 						<img src="images/spagetti-z-krewetkami.jpg" alt="">
 						<h4>Spagetti z krewetkami</h4>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
-					<div class="food-item">
+					<div class="food-item wow fadeInUp" data-wow-delay="0.3s">
 						<img src="images/zupa-tajska-z-makaronem-i-owocami-morza.jpg" alt="">
 						<h4>Zupa tajska z makaronem i owocami morza</h4>
 					</div>
-					<div class="food-item">
+					<div class="food-item wow fadeInUp" data-wow-delay="0.6s">
 						<img src="images/zupa-wloska.jpg" alt="">
 						<h4>Zupa włoska</h4>
 					</div>
@@ -98,162 +100,262 @@
 	<section id="menu">
 		<div>
 			<div>
-				<div class="heading-box col-md-12 col-sm-12 text-center">
+				<div class="heading-box col-md-12 col-sm-12 text-center wow flipInY" data-wow-delay="0.3s">
 					<h1 class="heading">Menu</h1>
 					<hr>
 				</div>
 				<div class="clearfix"></div>
 				<div class="row-item">
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="0.3s">
 						<div class="wrap">
 							<div>
 								<h3>Dania Główne</h3>
 								<p>Najlepsze specjały</p>
 								<hr>
-								<a href="" class="btn">MENU Dania Główne</a>
+								<a href="#dania_glowne" class="btn featherlight-link">MENU Dania Główne</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="0.6s">
 						<div>
 							<img src="images/dania-glowne.jpg" alt="Dania Główne">
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="0.9s">
 						<div class="wrap">
 							<div>
 								<h3>Zupy</h3>
 								<p>Polskie i nie tylko</p>
 								<hr>
-								<a href="" class="btn">MENU Zupy</a>
+								<a href="#zupy" class="btn featherlight-link">MENU Zupy</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="1.2s">
 						<div>
 							<img src="images/zupy.jpg" alt="Zupy">
 						</div>
 					</div>
 				</div>
 				<div class="row-item">
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="0.3s">
 						<div>
 							<img src="images/przystawki.jpg" alt="Przystawki">
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="0.6s">
 						<div class="wrap">
 							<div>
 								<h3>Przystawki</h3>
 								<p>Na dobry początek</p>
 								<hr>
-								<a href="" class="btn">MENU Przystawki</a>
+								<a href="#przystawki" class="btn featherlight-link">MENU Przystawki</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="0.9s">
 						<div>
 							<img src="images/ryby.jpg" alt="Ryby">
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="1.2s">
 						<div class="wrap">
 							<div>
 								<h3>Ryby</h3>
 								<p>Świerze i smaczne</p>
 								<hr>
-								<a href="" class="btn">MENU Ryby</a>
+								<a href="#ryby" class="btn featherlight-link">MENU Ryby</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row-item">
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="0.3s">
 						<div class="wrap">
 							<div>
 								<h3>Sałatki</h3>
 								<p>Smacznie i zdrowo</p>
 								<hr>
-								<a href="" class="btn">MENU Sałatki</a>
+								<a href="#salatki" class="btn featherlight-link">MENU Sałatki</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="0.6s">
 						<div>
 							<img src="images/salatki.jpg" alt="Sałatki">
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="0.9s">
 						<div class="wrap">
 							<div>
 								<h3>Makarony</h3>
 								<p>Włoskie smaki</p>
 								<hr>
-								<a href="" class="btn">MENU Makarony</a>
+								<a href="#makarony" class="btn featherlight-link">MENU Makarony</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="1.2s">
 						<div>
 							<img src="images/makarony.jpg" alt="Makarony">
 						</div>
 					</div>
 				</div>
 				<div class="row-item">
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="0.3s">
 						<div>
 							<img src="images/desery.jpg" alt="Desery">
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="0.6s">
 						<div class="wrap">
 							<div>
 								<h3>Desery</h3>
 								<p>Coś na słodko</p>
 								<hr>
-								<a href="" class="btn">MENU Desery</a>
+								<a href="#desery" class="btn featherlight-link">MENU Desery</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item image-item wow fadeInUp" data-wow-delay="0.9s">
 						<div>
 							<img src="images/napoje.jpg" alt="Napoje">
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6 menu-item">
+					<div class="col-md-3 col-sm-6 col-xs-6 menu-item wow fadeInUp" data-wow-delay="1.2s">
 						<div class="wrap">
 							<div>
 								<h3>Napoje</h3>
 								<p>Na gorąco i na zimno</p>
 								<hr>
-								<a href="" class="btn">MENU Napoje</a>
+								<a href="#napoje" class="btn featherlight-link">MENU Napoje</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div id="dania_glowne" class="featherlight-box">
+			<h3>dania główne</h3>
+			<ul>
+				<li>Kotlet schabowy, ziemniaki pieczone, kapusta kiszona zasmażana - 24 zł</li>
+				<li>Placki ziemniaczane z gulaszem wieprzowo-wołowym - 25 zł</li>
+				<li>Placki ziemniaczane z sosem grzybowym - 25 zł</li>
+				<li>Filet z kurczaka z grilla, sos szpinakowy lub serowy, surówka - 27 zł</li>
+				<li>Polędwiczka wieprzowa sos grzybowy, kopytka, buraczki - 28 zł</li>
+				<li>Rolada z piersi kurczaka ze szpinakiem, grillowaną cukinią, sosem gorgonzola i frytkami - 29 zł</li>
+				<li>Medaliony drobiowe z boczkiem w sosie pieczarkowym, kasza kuskus, pomidorki - 30 zł</li>
+				<li>Burger wołowy, mięso 100% wołowiny, sos autorski, warzywa, rukola, bekon, frytki - 30 zł</li>
+				<li>Stek z antrykota, frytki, sałatka wiosenna, masło czosnkowe, sos pleśniowy - 39 zł</li>
+				<li>Zamień frytki / risotto / na kaszę kuskus podaną z pieczarkami i cebulą - 3 zł</li>
+			</ul>
+		</div>
+
+		<div id="zupy" class="featherlight-box">
+			<h3>zupy</h3>
+			<ul>
+				<li>Zupa dnia - 6,90 zł</li>
+				<li>Krem z selera - 8 zł</li>
+				<li>Rosół - 8,50 zł</li>
+				<li>Żurek z pieczywem - 12 zł</li>
+				<li>Staropolski krem grzybowy - 14 zł</li>
+			</ul>
+		</div>
+
+		<div id="przystawki" class="featherlight-box">
+			<h3>przystawki</h3>
+			<ul>
+				<li>Pieczywo czosnkowe zapiekane z serem mozarella - 8 zł</li>
+				<li>Bruschetta - 10 zł</li>
+				<li>Focaccia tradycyjne włoskie ciasto zapieczone z parmezanem i solą - 13 zł </li>
+				<li>Carpaccio z buraka, rukolą, orzechami, słoneczkiem, serem feta - 11 zł</li>
+				<li>Placuszki z ziemniaka i cukini z wędzonym łososiem i sosem koperkowym - 14 zł</li>
+				<li>Krewetki z dodatkiem whisky podane z rukolą, pomidorkami i serem Grana Padano - 15 zł</li>
+				<li>TATAR z łososia wędzonego - 19 zł</li>
+			</ul>
+		</div>
+
+		<div id="ryby" class="featherlight-box">
+			<h3>ryby</h3>
+			<ul>
+				<li>Pstrąg pieczony pieczone warzywa, sałatka wiosenna - 30 zł</li>
+				<li>Pstrąg pieczony grillowane warzywa, sałatka wiosenna - 28 zł</li>
+			</ul>
+		</div>
+
+		<div id="salatki" class="featherlight-box">
+			<h3>sałatki</h3>
+			<ul>
+				<li>Grecka - pomidor, ogórek, oliwki, sałata, ser feta, sos winegret - 20 zł</li>
+				<li>Grillowany kurczak mix sałat, grilowane warzywa, sos winegret - 24 zł</li>
+				<li>Szpinak baby, makaron, krewetki w parmezanie, oliwki, pomidory suszone, oliwa z oliwek - 26 zł</li>
+			</ul>
+		</div>
+
+		<div id="makarony" class="featherlight-box">
+			<h3>makarony</h3>
+			<ul>
+				<li>Bolognese - tradycyjny sos boloński z mięsem wołowo – wieprzowym -18 zł </li>
+				<li>Z kurczakiem, pieczarkami, cebulą, sos kremowy - 19 zł</li>
+				<li>Ze szpinakiem, suszone pomidory, sos kremowy - 19 zł</li>
+				<li>Pesto, orzechy włoskie - 19 zł</li>
+				<li>Makaron z łososiem, kapary, sos śmietanowy (dostępny w wersji z chilli) - 20 zł</li>
+				<li>Z kurczakiem, szpinak, chilli, oliwa - 20 zł</li>
+				<li>Z salami, cebula, pieczarki, sos pomidorowy - 20 zł</li>
+				<li>Z bekonem, sos z sera pleśniowego - 22 zł</li>
+				<li>Zielona Pietruszka, szynką szwardzwaldzka, grzyby, rukola, sos kremowy - 22 zł</li>
+				<li>Kurczak curry, pieczarki, cebula czerwona, sos curry, rukola - 21 zł</li>
+			</ul>
+		</div>
+
+		<div id="desery" class="featherlight-box">
+			<h3>desery</h3>
+			<ul>
+				<li>Szarlotka z gałką lodów i polewą czelkoladową - 12 zł</li>
+				<li>Deser dnia  - 13 zł</li>
+				<li>Panna cotta z musem owocowym - 12 zł</li>
+				<li>Deser lodowy z musem owocowym, bitą śmietną I crunchem - 12 zł</li>
+			</ul>
+		</div>
+
+		<div id="napoje" class="featherlight-box">
+			<h3>napoje</h3>
+			<ul>
+				<li>Herbata - 6 zł</li>
+				<li>Kawa Espresso - 6 zł</li>
+				<li>Czarna kawa - 7 zł</li>
+				<li>Biała kawa - 8 zł</li>
+				<li>Latte - 10 zł</li>
+				<li>Cappuccino - 8zł</li>
+				<li>Woda gazowana / niegazowana 250 ml - 4 zł</li>
+				<li>Pepsi 200 ml - 6 zł</li>
+				<li>Sok pomarańczowy / jabłko / czarna porzeczka / grejpfrut / pomidorowy 200 ml -  6 zł</li>
+				<li>Red Bull - 9 zł</li>
+			</ul>
+		</div>
+
 	</section>
 	
 	<!-- team section -->
 	<section id="team">
 		<div class="container">
 			<div class="row">
-				<div class="heading-box col-md-12 col-sm-12 text-center">
+				<div class="heading-box col-md-12 col-sm-12 text-center wow flipInY" data-wow-delay="0.3s">
 					<h1 class="heading">Nasz zespół</h1>
 					<hr>
 				</div>
-				<div class="team-item col-md-4 col-sm-4">
+				<div class="team-item col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
 					<img src="images/szef-kuchni.jpg" alt="Łukasz - Szef kuchni">
 					<h4>Łukasz</h4>
 					<h3>Szef kuchni</h3>
 				</div>
-				<div class="team-item col-md-4 col-sm-4">
+				<div class="team-item col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 					<img src="images/cukiernik.jpg" alt="Marek - Cukiernik">
 					<h4>Marek</h4>
 					<h3>Cukiernik</h3>
 				</div>
-				<div class="team-item col-md-4 col-sm-4">
+				<div class="team-item col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
 					<img src="images/kelnerka.jpg" alt="Alicja - Kelnerka">
 					<h4>Alicja</h4>
 					<h3>Kelnerka</h3>
@@ -266,12 +368,12 @@
 	<section id="gallery">
 		<div class="container">
 			<div class="row">
-				<div class="heading-box col-md-12 col-sm-12 text-center">
+				<div class="heading-box col-md-12 col-sm-12 text-center wow flipInY" data-wow-delay="0.3s">
 					<h1 class="heading">Galeria</h1>
 					<hr>
 				</div>
 				<div class="clearfix"></div>
-				<div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+				<div id="galleryCarousel" class="carousel slide wow fadeIn" data-wow-delay="0.3s" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
 							<img class="d-block w-100" src="images/galeria-danie1.jpg" alt="">
@@ -309,11 +411,11 @@
 	<section id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="heading-box col-md-12 col-sm-12 text-center">
+				<div class="heading-box col-md-12 col-sm-12 text-center wow flipInY" data-wow-delay="0.3s">
 					<h1 class="heading">Kontakt</h1>
 					<hr>
 				</div>
-				<div class="col-md-6 col-sm-12 box">
+				<div class="col-md-6 col-sm-12 box wow fadeIn" data-wow-delay="0.3s">
 					<form action="" method="post">
 						<div class="col-md-12">
 							<input name="name" type="text" class="form-control" id="name" placeholder="Imię">
@@ -329,7 +431,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-md-6 col-sm-12 box">
+				<div class="col-md-6 col-sm-12 box wow fadeIn" data-wow-delay="0.3s">
 					<div class="lead col-md-12">
 						<p><i class="glyphicon glyphicon-phone"></i> Telefon</p>
 						<h4>123-456-789</h4>
@@ -348,19 +450,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="col-md-4 col-sm-4 lead maps">
+					<div class="col-md-4 col-sm-4 lead maps wow fadeInUp" data-wow-delay="0.3s">
 						<h2 class="heading">Mapa</h2>
 						<div>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.800383397407!2d21.001086515685095!3d52.228844365518064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8d65233559%3A0xeb0bc9f267c74ed9!2sWarszawa+Centralna!5e0!3m2!1spl!2spl!4v1505378714992" width="280" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 lead">
+					<div class="col-md-4 col-sm-6 lead wow fadeInUp" data-wow-delay="0.6s">
 						<h2 class="heading">Godziny otwarcia</h2>
 						<p>Pon - Pt <span>9:00 - 20:00</span></p>
 						<p>Sobota <span>11:30 - 22:00</span></p>
 						<p>Niedziela <span>10:30 - 22:00</span></p>
 					</div>
-					<div class="col-md-4 col-sm-6 lead">
+					<div class="col-md-4 col-sm-6 lead wow fadeInUp" data-wow-delay="0.9s">
 						<h2 class="heading">Znajdź nas</h2>
 						<ul class="social-icon">
 							<li><a href="#" class="icon icon-facebook"></a></li>
@@ -381,6 +483,8 @@
 	<!-- JAVASCRIPT JS FILES -->	
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/featherlight.js"></script>
 	<script src="js/custom.js"></script>
 
 </body>
