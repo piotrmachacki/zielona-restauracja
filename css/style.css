@@ -12,7 +12,7 @@ body {
 }
 
 .heading {
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: 500;
 }
 
@@ -26,7 +26,7 @@ p {
 
 hr {
 	border-top: 2px solid #828282;
-	width: 120px;
+	width: 200px;
 }
 
 img {
@@ -159,6 +159,8 @@ header.navbar {
 .menu-item {
 	background: #f5f5f5;
 	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .menu-item.image-item {
@@ -166,15 +168,15 @@ header.navbar {
 }
 
 .menu-item .wrap {
-	width: 100%;
-	height: 100%;
-	display: table;
-	margin: auto;
+	-moz-box-align: center;
+	align-items: center;
+	display: flex;
+	flex-grow: 1;
 }
 
 .menu-item .wrap div {
-	display: table-cell;
-	vertical-align: middle;
+	flex-grow: 1;
+	-moz-box-flex: 1;
 }
 
 .menu-item .wrap div hr {
@@ -184,7 +186,7 @@ header.navbar {
 	border-top: 1px solid #dddddd;
 }
 
-.menu-item .btn {
+.menu-item .wrap div .btn {
 	background-color: #333333;
 	border-width: 0;
 	color: #ffffff;
@@ -199,6 +201,42 @@ header.navbar {
 	transition: background-color 300ms ease 0s;
 	vertical-align: middle;
 	border-radius: 0;
+}
+
+.menu-item .wrap div .btn:hover {
+	background-color: #525252;
+}
+
+@media (max-width: 480px) {
+	.menu-item .wrap div h3 {
+		font-size: 22px;
+	}
+	.menu-item .wrap div p {
+		font-size: 14px;
+	}
+	.menu-item .wrap div hr {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.menu-item .wrap div .btn {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 360px) {
+	.menu-item .wrap div h3 {
+		font-size: 20px;
+	}
+	.menu-item .wrap div p {
+		font-size: 14px;
+	}
+	.menu-item .wrap div hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.menu-item .wrap div .btn {
+		font-size: 10px;
+	}
 }
 
 .menu-item .btn:hover, .menu-item .btn:focus {
